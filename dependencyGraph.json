@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1511960800867,
+  "timestamp": 1512080238165,
   "graph": {
     "options": {
       "directed": true,
@@ -39,45 +39,11 @@
         }
       },
       {
-        "v": "00-atoms/feedback/progress.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/forms/00-text-field.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/forms/01-text-area.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/forms/02-select-menu.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/forms/03-radio-button.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/forms/04-checkbox.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "00-atoms/images/340x220.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-blocks-highlighted_block/01-molecules-blocks-highlighted_block.rendered.html",
+          "lineagePattern": "molecules-highlighted_block"
         }
       },
       {
@@ -101,7 +67,37 @@
       {
         "v": "00-atoms/images/710x400.mustache",
         "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-defilement-photoxl-titre/02-organisms-defilement-photoxl-titre.rendered.html",
+          "lineagePattern": "organisms-photoxl-titre"
+        }
+      },
+      {
+        "v": "00-atoms/images/degrade.mustache",
+        "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/images/logo.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/text/Sous-titre.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-blocks-titre-soustitre/01-molecules-blocks-titre-soustitre.rendered.html",
+          "lineagePattern": "molecules-titre-soustitre"
+        }
+      },
+      {
+        "v": "00-atoms/text/Titre.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-blocks-titre-soustitre/01-molecules-blocks-titre-soustitre.rendered.html",
+          "lineagePattern": "molecules-titre-soustitre"
         }
       },
       {
@@ -111,25 +107,7 @@
         }
       },
       {
-        "v": "00-atoms/text/hr.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/text/inline-elements.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/text/paragraph.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/text/preformatted-text.mustache",
+        "v": "00-atoms/text/text.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -138,12 +116,32 @@
         "v": "01-molecules/blocks/highlighted_block.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-defilement-defilement/02-organisms-defilement-defilement.rendered.html",
-          "lineagePattern": "organisms-defilement"
+          "lineagePath": "../../patterns/03-templates-3-defilement-3-template-defilement/03-templates-3-defilement-3-template-defilement.rendered.html",
+          "lineagePattern": "templates-template-defilement"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/text_description.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/titre-soustitre.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-defilement-photoxl-titre/02-organisms-defilement-photoxl-titre.rendered.html",
+          "lineagePattern": "organisms-photoxl-titre"
         }
       },
       {
         "v": "02-organisms/defilement/defilement.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-organisms/defilement/photoxl-titre.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-3-defilement-3-template-defilement/03-templates-3-defilement-3-template-defilement.rendered.html",
@@ -171,13 +169,43 @@
     ],
     "edges": [
       {
+        "v": "01-molecules/blocks/highlighted_block.mustache",
+        "w": "00-atoms/images/340x220.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/blocks/titre-soustitre.mustache",
+        "w": "00-atoms/text/Titre.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/blocks/titre-soustitre.mustache",
+        "w": "00-atoms/text/Sous-titre.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/defilement/defilement.mustache",
         "w": "01-molecules/blocks/highlighted_block.mustache",
         "value": {}
       },
       {
+        "v": "02-organisms/defilement/photoxl-titre.mustache",
+        "w": "01-molecules/blocks/titre-soustitre.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/defilement/photoxl-titre.mustache",
+        "w": "00-atoms/images/710x400.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/3-defilement/3-template-defilement.mustache",
-        "w": "02-organisms/defilement/defilement.mustache",
+        "w": "02-organisms/defilement/photoxl-titre.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/3-defilement/3-template-defilement.mustache",
+        "w": "01-molecules/blocks/highlighted_block.mustache",
         "value": {}
       }
     ]

@@ -1,55 +1,66 @@
 
-
 @font-face {
-  font-family: circular;
-  src: url("../fonts/CircularStd-Black.otf") format("opentype");
-  font-weight: bolder;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: circular;
-  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
-  font-weight: bolder;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: circular;
+  font-family: "circular-book";
   src: url("../fonts/CircularStd-Book.otf") format("opentype");
-  font-weight: lighter;
+
   font-style: normal;
+  font-weight: normal;
 }
 
+
 @font-face {
-  font-family: circular;
+  font-family: "circular-book";
   src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
-  font-weight: lighter;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "circular-medium";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;:
+}
+
+@font-face {
+  font-family: "circular-medium";
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: circular;
+  font-family: "circular-bold";
   src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: circular;
-  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-  font-weight: medium;
-  font-style: normal:
-}
-
-@font-face {
-  font-family: circular;
-  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
-  font-weight: medium;
+  font-family: "circular-bold";
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: normal;
   font-style: italic;
 }
+
+
+@font-face {
+  font-family: "circular-black";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "ircular-black";
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 
 
 
@@ -59,13 +70,13 @@
 
 body {
   background: #fff;
-  font-family: circular;
-  font-weight: lighter;
-  font-style: normal;
-  color: black;
-  font: 100%/1.5 "circular";
-  -webkit-text-size-adjust: 100%;
   min-height: 100vh;
+
+  font-family: "circular-book";
+  font-style: normal;
+  font-weight: normal;
+
+
   display: flex;
   flex-direction: column
 }
@@ -75,15 +86,19 @@ body {
 }
 
 h1 {
+  font-family: "circular-bold";
+  font-weight: normal;
+  font-style: normal;
+
   font-size: 35pt;
   line-height: 1.2;
   color: black;
 }
 
 h2 {
-  font-family: circular;
+  font-family: "circular-bold";
+  font-weight: normal;
   font-style: normal;
-  font-weight: bold;
   letter-spacing: 0, 2em;
   line-height: 1.2;
   color: black;
@@ -91,18 +106,18 @@ h2 {
 
 
 h3 {
-  font-family: circular;
-  font-style: bold;
+  font-family: "circular-medium";
   font-weight: normal;
+  font-style: normal;
   letter-spacing: 0, 8em;
   line-height: 1.2;
   color: black;
 }
 
 h4 {
-  font-family: circular;
-  font-style: italic;
+  font: "circular-book";
   font-weight: normal;
+  font-style: italic;
   font-size: 12pt;
   letter-spacing: 0, 8em;
   line-height: 1.2;
@@ -110,31 +125,31 @@ h4 {
 }
 
 h5 {
-  font-family: circular;
+  font-family: "circular-book";
+  font-weight: normal;
   font-style: normal;
-  font-weight: 600;
   letter-spacing: 0, 8em;
   line-height: 1.2;
   color: black;
 }
 
 h6 {
-  color: black;
 }
 
 p {
-  font-family: circular;
-  font-weight: lighter;
+  font-family: "circular-book";
   font-style: normal;
+  font-weight: normal;
+
   font-size: 12pt;
   color: black;
 }
 
 h{
-
-  font-family: circular;
-  font-weight: lighter;
+  font-family: "circular-book";
   font-style: normal;
+  font-weight: normal;
+
   letter-spacing: 0, 8em;
   line-height: 1.2;
   color: black;
@@ -143,8 +158,10 @@ h{
 
 .sg-label{
 
-  font-family: circular;
+  font-family: "circular-book";
+  font-style: normal;
   font-weight: normal;
+
   letter-spacing: 0, 8em;
   line-height: 1.2;
   color: black;
@@ -155,9 +172,6 @@ h{
 
 .header {
 
-  font-family: circular;
-  font-style: normal;
-  font-weight: normal;
 
   margin: 0 auto;
   padding-left: 2em;
@@ -175,9 +189,7 @@ h{
 }
 
 
-
 .header ul {
-
 
 
   display: inline-block;
@@ -192,6 +204,8 @@ h{
 }
 
 .header h5 {
+
+
   margin-bottom: 0.5em;
   margin-right: 0.5em;
   margin-left: 0.5em;
@@ -200,6 +214,7 @@ h{
 }
 
 .header h3 {
+
 
 
   letter-spacing: 0.1em;
@@ -244,7 +259,7 @@ h{
 }
 
 .logo-menu-menu{
-  margin-left: 325px;
+  margin-left: 570px;
 
   display: -webkit-inline-box;
 
@@ -260,10 +275,12 @@ border: solid #C478FF 2.5px ;
   display: inline-block;
 
 
+
 }
 
 
 .menusecondaire h3{
+
 
   margin: 0;
   letter-spacing: 0.1em;
@@ -274,10 +291,11 @@ border: solid #C478FF 2.5px ;
 .menusecondaire ul{
 
 
-  padding-bottom: 1em;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  padding-top: 1em;
+
+  padding-bottom: 0.7em;
+  padding-right: 1.3em;
+  padding-left: 1.3em;
+  padding-top: 0.7em;
 
 
   margin-right: 0.6em;
@@ -301,18 +319,21 @@ border: solid #C478FF 2.5px ;
 
 
 
-
 .button{
+
+  font-family: "circular-bold";
+  font-weight: normal;
+  font-style: normal;
 
   border: solid #C478FF 3.5px ;
 
- background-color: white;
+background-color: transparent;
+
  width: auto;
  height: 60px;
 
 
- font-weight: bolder;
- font-style: normal;
+
 
 
  font-size: 12pt;
@@ -355,7 +376,8 @@ border: solid #C478FF 3.5px ;
 }
 
 .soustitre h3 {
-  font: circularitalic;
+
+
   background-color: #7D40CE;
   color: white;
   padding: 1rem;
@@ -365,9 +387,14 @@ border: solid #C478FF 3.5px ;
 }
 
 .hashtag h4 {
-  font: circularitalic;
+
+  font: "circular-book";
+  font-weight: normal;
+  font-style: italic;
+
   background-color: #C478FF;
   color: white;
+
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   padding-top: 0.4rem;
@@ -379,6 +406,200 @@ border: solid #C478FF 3.5px ;
   margin-bottom: 0.8rem;
 }
 
+
+
+
+/*------------------------------*/
+
+
+.homeslider img {
+
+  position:absolute;
+  ;
+}
+
+.homeslider{
+
+  position:absolute;
+  ;
+
+
+}
+
+
+.homeslider__content{
+
+display: inline-block;
+  position: relative;
+
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+
+.homeslider__content .menusecondaire {
+  transform-origin: 50% 50% ;
+  float: bottom;
+
+ transform: rotate(-90deg);
+
+}
+
+
+.homeslider__content .titre-soustitre {
+
+max-width: 650px;
+  margin-left: 140px;
+  margin-top: 380px;
+
+}
+
+
+.homeslider__content .button{
+
+  margin-left: 1150px;
+  margin-top: 0px;
+
+}
+
+
+
+
+
+/*------------------------------*/
+.templatehome{
+
+}
+
+/*------------------------------*/
+
+
+#content p{
+  font-size: 12px;
+color: white;
+
+}
+
+
+#clem p{
+color: white;
+display: inline;
+}
+
+#containerfooter #content ul{
+ padding: 0;
+
+ margin-right: 30px;
+ margin-left: 0px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+
+display: inline-block;
+
+}
+
+#content{
+list-style-type: none;
+margin-right: 0em;
+margin-left: 1em;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+#logofooter img{
+margin: 60px;
+max-width: 80px;
+border: solid white 2px ;
+
+}
+
+#containerfooter {
+max-width: 1480px;
+display: flex;
+  color: white;
+
+  background: black;
+
+ height: 205px;
+}
+
+/*------------------------------*/
+
+
+.petit-mise-avant-article{
+ background: red;
+ max-width: 340px;
+
+}
+
+.int-petit-mise-avant-article{
+
+margin: 40px;
+}
+
+
+
+/*------------------------------*/
+
+
+.grande-mise-avant-article{
+ background: red;
+ max-width: 710px;
+
+}
+
+.int-grande-mise-avant-article{
+
+margin: 40px;
+}
+
+/*------------------------------*/
+
+
+
+.triple-blocks{
+
+ max-width: 340px;
+
+}
+
+
+.int-triple-blocks{
+
+  text-align: center;
+
+
+
+}
+
+
+/*------------------------------*/
+
+.article-box{
+
+display: inline-flex;
+
+}
+
+/*------------------------------*/
+
+
+.triple-blocks
+{
+
+  display: flex;
+
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+
+
+/*------------------------------*/
 .subheading {
   font-family: "Lora";
   font-weight: normal
